@@ -6,7 +6,7 @@
       defer
     ></script>
     <div>
-      <div class = 'flex-start'>
+      <div class="flex-start">
         <dotlottie-player
           src="https://lottie.host/2e3dd6ce-3a2e-41aa-b202-58c0387499f6/Qf8L1lhHjz.lottie"
           background="transparent"
@@ -15,9 +15,6 @@
           loop
           autoplay
         ></dotlottie-player>
-        <h1>My Vue Web Component</h1>
-      </div>
-      <div class = 'flex-start'>
         <p>{{ msg }}</p>
       </div>
     </div>
