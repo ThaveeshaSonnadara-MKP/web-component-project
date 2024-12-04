@@ -6,7 +6,7 @@
       defer
     ></script>
     <div>
-      <div class="flex-start">
+      <div class="flex-start text-style">
         <dotlottie-player
           src="https://lottie.host/2e3dd6ce-3a2e-41aa-b202-58c0387499f6/Qf8L1lhHjz.lottie"
           background="transparent"
@@ -15,7 +15,10 @@
           loop
           autoplay
         ></dotlottie-player>
-        <p>{{ msg }}</p>
+        <h1 class="text-style">{{ title }}</h1>
+      </div>
+      <div>
+        <p class="text-style">{{ msg }}</p>
       </div>
     </div>
   </section>
@@ -23,11 +26,11 @@
 
 <script>
 export default {
-  props: ["msg"],
+  props: ["title", "msg"],
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 .flex-start {
   display: flex;
   justify-content: flex-start;
@@ -35,13 +38,12 @@ export default {
   padding: 1rem;
   width: 100%;
   background-color: #f2f2f2;
-  font-family: Arial, sans-serif;
 }
 h1 {
   color: green;
 }
-p {
-  color: blue;
+.text-style {
+  font-family: Arial, sans-serif;
 }
 section {
   background-color: oldlace;
