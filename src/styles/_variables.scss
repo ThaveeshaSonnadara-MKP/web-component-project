@@ -1,0 +1,61 @@
+// Color system
+
+// gray-color-variables
+$white: #ffffff !default;
+$gray-100: #fafafa !default;
+$gray-200: #f7f7f7 !default;
+$gray-300: #f2f2f2 !default;
+$gray-400: #e5e5e5 !default;
+$gray-500: #d9d9d9 !default;
+$gray-600: #7d8891 !default;
+$gray-700: #4e5d6b !default;
+$gray-800: #323f4f !default;
+$gray-900: #273238 !default;
+$black: #162d3d !default;
+
+// color-variables [atlassian]
+$primary-25: #f9f7fc !default;
+$primary-50: #f0ecf9 !default;
+$primary-100: #845ecb !default;
+$primary-200: #6e42c1 !default;
+$primary-300: #653dbb !default;
+
+$red: #eb1515 !default;
+$red-50: #{$red}0f !default;
+$red-100: #{$red}33 !default;
+$red-200: #d11313 !default;
+$red-300: #a30c0c !default;
+
+$orange: #f7802f !default;
+
+$green: #2ec685 !default;
+$green-50: #{$green}0d !default;
+$green-200: #20a86d !default;
+
+$yellow: #e5ba30 !default;
+$yellow-50: #{$yellow}17 !default;
+
+$gold-50: #fefaf3 !default;
+$gold: #b66d00 !default;
+
+$pink: #8e21b1 !default;
+$pink-200: #8e21b1 !default;
+$pink-100: #aa4dc8 !default;
+$pink-50: #eeddf3 !default;
+
+$background: #fafafa;
+
+// font-color-variables
+$black-HE: #20455e; //High Emphasis color
+$black-ME: #577083; //Medium Emphasis color
+$black-disabled: #b6c1cd; //Low Emphasis color
+
+// Skelton properties
+$base-color: $white;
+$shine-color: $background;
+$animation-duration: 1.6s;
+
+// default-font
+$default-font: "Poppins", sans-serif;
+
+$gap: 24px;
