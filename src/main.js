@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import wrap from '@vue/web-component-wrapper';
-import MyWebComponent from './components/MyWebComponent';
+import BackgroundElement from './components/BackgroundElement.vue';
 
-const WrappedElement = wrap(Vue, MyWebComponent);
+const WrappedElement = wrap(Vue, BackgroundElement);
 
-window.customElements.define('my-web-component', WrappedElement);
+window.customElements.define("background-element", WrappedElement);
