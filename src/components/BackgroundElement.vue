@@ -63,7 +63,7 @@ export default {
             type: String,
             default: "bear",
             validate: true,
-            validator: function (value) { 
+            validator: function (value) {
                 return ["bear", "fox", "bird", "unicorn"].includes(value);
             }
         },
@@ -101,7 +101,8 @@ export default {
 
 .no-selection {
     cursor: default;
-    -webkit-user-select: none; /* Safari */
+    -webkit-user-select: none;
+    /* Safari */
     user-select: none;
 }
 
