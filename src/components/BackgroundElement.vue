@@ -4,21 +4,21 @@
             type="module"></script>
         <div>
             <!-- :style="CSSVariables" -->
-            <div class="flex-start" :style="{ 'background-color': bg_color }">
+            <div class="flex-start" :style="{ 'background-color': bgcolor }">
                 <dotlottie-player @click="iconClicked"
                     src="https://lottie.host/2e3dd6ce-3a2e-41aa-b202-58c0387499f6/Qf8L1lhHjz.lottie"
                     background="transparent" speed="1" style="width: 50px; height: 50px; cursor: pointer;" loop
                     autoplay></dotlottie-player>
-                <h1 class="no-selection" :style="{ 'color': title_text_color }">{{ title.toUpperCase() }}</h1>
+                <h1 class="no-selection" :style="{ 'color': titletextcolor }">{{ title.toUpperCase() }}</h1>
             </div>
 
-            <div class="msg-box" :style="{ 'border-width': bg_border_width + 'px', 'border-color': bg_border_color }">
+            <div class="msg-box" :style="{ 'border-width': bgborderwidth + 'px', 'border-color': bgbordercolor }">
                 <div class="emoji" v-if="emojiname == 'bear'">🐻</div>
                 <div class="emoji" v-if="emojiname == 'fox'">🦊</div>
                 <div class="emoji" v-if="emojiname == 'bird'">🐥</div>
                 <div class="emoji" v-if="emojiname == 'unicorn'">🦄</div>
 
-                <p :style="{ 'color': msg_text_color }">
+                <p :style="{ 'color': msgtextcolor }">
                     {{ msg }}</p>
             </div>
 
@@ -30,23 +30,23 @@
 export default {
     name: "background-element",
     props: {
-        bg_color: {
+        bgcolor: {
             type: String,
             default: "rgb(220, 205, 235)",
         },
-        title_text_color: {
+        titletextcolor: {
             type: String,
             default: "black",
         },
-        msg_text_color: {
+        msgtextcolor: {
             type: String,
             default: "black",
         },
-        bg_border_width: {
+        bgborderwidth: {
             type: Number,
             default: 0,
         },
-        bg_border_color: {
+        bgbordercolor: {
             type: String,
             default: "#CF7C1B",
         },
